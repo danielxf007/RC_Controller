@@ -21,8 +21,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="valign" val="base"/>
     </tool>
   </lib>
-  <lib desc="file#Adder.circ" name="7"/>
-  <lib desc="file#Predicates.circ" name="8"/>
+  <lib desc="file#Predicates.circ" name="7"/>
+  <lib desc="file#Equality.circ" name="8"/>
   <main name="SumAdjuster"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -61,104 +61,72 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <wire from="(300,300)" to="(360,300)"/>
     <wire from="(370,310)" to="(370,380)"/>
     <wire from="(380,210)" to="(380,280)"/>
-    <wire from="(180,210)" to="(180,220)"/>
+    <wire from="(140,200)" to="(200,200)"/>
     <wire from="(390,160)" to="(440,160)"/>
-    <wire from="(240,310)" to="(240,320)"/>
-    <wire from="(250,390)" to="(250,400)"/>
     <wire from="(270,330)" to="(390,330)"/>
+    <wire from="(140,300)" to="(190,300)"/>
     <wire from="(270,330)" to="(270,350)"/>
     <wire from="(390,160)" to="(390,180)"/>
     <wire from="(390,310)" to="(390,330)"/>
-    <wire from="(140,300)" to="(140,380)"/>
     <wire from="(400,210)" to="(400,230)"/>
-    <wire from="(260,380)" to="(370,380)"/>
+    <wire from="(140,300)" to="(140,380)"/>
+    <wire from="(140,380)" to="(370,380)"/>
     <wire from="(260,230)" to="(260,260)"/>
-    <wire from="(140,300)" to="(170,300)"/>
-    <wire from="(230,200)" to="(260,200)"/>
-    <wire from="(140,380)" to="(230,380)"/>
+    <wire from="(170,210)" to="(200,210)"/>
     <wire from="(140,200)" to="(140,300)"/>
     <wire from="(140,160)" to="(140,200)"/>
     <wire from="(120,160)" to="(140,160)"/>
-    <wire from="(140,200)" to="(160,200)"/>
-    <wire from="(250,300)" to="(270,300)"/>
-    <wire from="(200,300)" to="(220,300)"/>
+    <wire from="(170,310)" to="(190,310)"/>
     <wire from="(260,230)" to="(400,230)"/>
     <wire from="(260,350)" to="(270,350)"/>
-    <wire from="(190,200)" to="(200,200)"/>
-    <wire from="(180,220)" to="(190,220)"/>
-    <wire from="(160,310)" to="(170,310)"/>
-    <wire from="(290,200)" to="(370,200)"/>
-    <wire from="(240,320)" to="(250,320)"/>
-    <wire from="(250,400)" to="(260,400)"/>
     <wire from="(250,260)" to="(260,260)"/>
-    <comp lib="8" loc="(300,300)" name="IsNonNegative"/>
+    <wire from="(220,300)" to="(360,300)"/>
+    <wire from="(230,200)" to="(370,200)"/>
+    <comp lib="0" loc="(170,310)" name="Constant">
+      <a name="width" val="4"/>
+      <a name="value" val="0x8"/>
+    </comp>
+    <comp lib="0" loc="(170,210)" name="Constant">
+      <a name="width" val="4"/>
+      <a name="value" val="0xf"/>
+    </comp>
     <comp lib="6" loc="(198,265)" name="Text">
       <a name="text" val="MinSpeed"/>
     </comp>
-    <comp lib="2" loc="(190,200)" name="BitSelector">
+    <comp lib="0" loc="(120,160)" name="Pin">
       <a name="width" val="4"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Sum"/>
     </comp>
-    <comp lib="0" loc="(190,220)" name="Constant">
-      <a name="facing" val="west"/>
-      <a name="width" val="2"/>
-      <a name="value" val="0x3"/>
-    </comp>
-    <comp lib="0" loc="(160,310)" name="Constant">
-      <a name="width" val="4"/>
-      <a name="value" val="0x9"/>
-    </comp>
-    <comp lib="2" loc="(260,380)" name="BitSelector">
-      <a name="width" val="4"/>
-      <a name="group" val="3"/>
-    </comp>
-    <comp lib="8" loc="(230,200)" name="IsNonNegative"/>
-    <comp lib="2" loc="(390,180)" name="Multiplexer">
-      <a name="facing" val="north"/>
-      <a name="width" val="3"/>
-    </comp>
-    <comp lib="0" loc="(260,400)" name="Constant">
-      <a name="facing" val="west"/>
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="0" loc="(250,260)" name="Constant">
-      <a name="width" val="3"/>
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="0" loc="(250,320)" name="Constant">
-      <a name="facing" val="west"/>
-      <a name="width" val="2"/>
-      <a name="value" val="0x3"/>
-    </comp>
-    <comp lib="0" loc="(260,350)" name="Constant">
-      <a name="width" val="3"/>
-      <a name="value" val="0x7"/>
-    </comp>
+    <comp lib="8" loc="(220,300)" name="Equality4Bits"/>
     <comp lib="2" loc="(380,280)" name="Multiplexer">
       <a name="facing" val="north"/>
-      <a name="width" val="3"/>
-    </comp>
-    <comp lib="2" loc="(250,300)" name="BitSelector">
       <a name="width" val="4"/>
     </comp>
     <comp lib="0" loc="(440,160)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
-      <a name="width" val="3"/>
+      <a name="width" val="4"/>
       <a name="label" val="Sum"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="1" loc="(290,200)" name="NOT Gate"/>
+    <comp lib="8" loc="(230,200)" name="Equality4Bits"/>
     <comp lib="6" loc="(208,356)" name="Text">
       <a name="text" val="MaxSpeed"/>
     </comp>
-    <comp lib="7" loc="(200,300)" name="Adder4Bits"/>
-    <comp lib="0" loc="(120,160)" name="Pin">
+    <comp lib="0" loc="(250,260)" name="Constant">
       <a name="width" val="4"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="Sum"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="2" loc="(390,180)" name="Multiplexer">
+      <a name="facing" val="north"/>
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(260,350)" name="Constant">
+      <a name="width" val="4"/>
+      <a name="value" val="0x7"/>
     </comp>
   </circuit>
 </project>
