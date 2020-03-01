@@ -72,21 +72,13 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(140,20)" to="(180,20)"/>
     <wire from="(100,40)" to="(100,130)"/>
     <wire from="(80,90)" to="(180,90)"/>
-    <comp lib="0" loc="(40,30)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="COND"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(300,50)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="C"/>
-      <a name="labelloc" val="north"/>
-    </comp>
     <comp lib="0" loc="(40,80)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="A"/>
       <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="1" loc="(140,20)" name="NOT Gate">
+      <a name="size" val="20"/>
     </comp>
     <comp lib="1" loc="(210,30)" name="AND Gate">
       <a name="size" val="30"/>
@@ -96,17 +88,25 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
     </comp>
+    <comp lib="1" loc="(210,80)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(300,50)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="C"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(40,30)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="COND"/>
+      <a name="labelloc" val="north"/>
+    </comp>
     <comp lib="0" loc="(40,130)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="B"/>
       <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="1" loc="(140,20)" name="NOT Gate">
-      <a name="size" val="20"/>
-    </comp>
-    <comp lib="1" loc="(210,80)" name="AND Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
     </comp>
   </circuit>
   <circuit name="IfThenElseTwoBits">
@@ -142,17 +142,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(130,340)" to="(140,340)"/>
     <wire from="(80,280)" to="(90,280)"/>
     <wire from="(70,120)" to="(80,120)"/>
-    <comp lib="0" loc="(70,120)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="COND"/>
-    </comp>
     <comp loc="(230,240)" name="IfThenElseOneBit"/>
-    <comp lib="0" loc="(70,190)" name="Pin">
-      <a name="width" val="2"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="A"/>
+    <comp lib="0" loc="(290,260)" name="Splitter">
+      <a name="facing" val="west"/>
     </comp>
-    <comp lib="0" loc="(110,190)" name="Splitter"/>
     <comp lib="0" loc="(340,260)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -160,16 +153,23 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="C"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(110,360)" name="Splitter"/>
     <comp lib="0" loc="(70,360)" name="Pin">
       <a name="width" val="2"/>
       <a name="tristate" val="false"/>
       <a name="label" val="B"/>
     </comp>
-    <comp lib="0" loc="(290,260)" name="Splitter">
-      <a name="facing" val="west"/>
-    </comp>
     <comp loc="(230,320)" name="IfThenElseOneBit"/>
+    <comp lib="0" loc="(110,190)" name="Splitter"/>
+    <comp lib="0" loc="(110,360)" name="Splitter"/>
+    <comp lib="0" loc="(70,120)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="COND"/>
+    </comp>
+    <comp lib="0" loc="(70,190)" name="Pin">
+      <a name="width" val="2"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="A"/>
+    </comp>
   </circuit>
   <circuit name="IfThenElseThreeBits">
     <a name="circuit" val="IfThenElseThreeBits"/>
@@ -216,11 +216,17 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(190,240)" to="(200,240)"/>
     <wire from="(70,80)" to="(80,80)"/>
     <wire from="(190,220)" to="(260,220)"/>
+    <comp loc="(340,250)" name="IfThenElseTwoBits"/>
     <comp lib="0" loc="(70,80)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="COND"/>
     </comp>
     <comp lib="0" loc="(120,320)" name="Splitter">
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+    </comp>
+    <comp loc="(230,250)" name="IfThenElseOneBit"/>
+    <comp lib="0" loc="(120,150)" name="Splitter">
       <a name="fanout" val="3"/>
       <a name="incoming" val="3"/>
     </comp>
@@ -232,21 +238,15 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="fanout" val="3"/>
       <a name="incoming" val="3"/>
     </comp>
-    <comp lib="0" loc="(120,150)" name="Splitter">
-      <a name="fanout" val="3"/>
-      <a name="incoming" val="3"/>
+    <comp lib="0" loc="(220,280)" name="Splitter">
+      <a name="facing" val="west"/>
     </comp>
     <comp lib="0" loc="(70,150)" name="Pin">
       <a name="width" val="3"/>
       <a name="tristate" val="false"/>
       <a name="label" val="A"/>
     </comp>
-    <comp loc="(230,250)" name="IfThenElseOneBit"/>
-    <comp lib="0" loc="(70,320)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="B"/>
-    </comp>
+    <comp lib="0" loc="(400,230)" name="Splitter"/>
     <comp lib="0" loc="(520,200)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -254,11 +254,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="C"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(220,280)" name="Splitter">
-      <a name="facing" val="west"/>
+    <comp lib="0" loc="(70,320)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B"/>
     </comp>
-    <comp lib="0" loc="(400,230)" name="Splitter"/>
-    <comp loc="(340,250)" name="IfThenElseTwoBits"/>
   </circuit>
   <circuit name="IfThenElseFourBits">
     <a name="circuit" val="IfThenElseFourBits"/>
@@ -305,11 +305,33 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(160,340)" to="(230,340)"/>
     <wire from="(160,140)" to="(230,140)"/>
     <wire from="(160,160)" to="(230,160)"/>
+    <comp lib="0" loc="(400,280)" name="Splitter">
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+    </comp>
+    <comp lib="0" loc="(100,370)" name="Pin">
+      <a name="width" val="4"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B"/>
+    </comp>
+    <comp lib="0" loc="(550,240)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="4"/>
+      <a name="label" val="C"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(100,180)" name="Pin">
+      <a name="width" val="4"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="A"/>
+    </comp>
     <comp lib="0" loc="(250,130)" name="Splitter">
       <a name="facing" val="west"/>
       <a name="fanout" val="3"/>
       <a name="incoming" val="3"/>
     </comp>
+    <comp loc="(350,280)" name="IfThenElseThreeBits"/>
     <comp lib="0" loc="(90,100)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="COND"/>
@@ -319,39 +341,17 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="fanout" val="3"/>
       <a name="incoming" val="3"/>
     </comp>
-    <comp lib="0" loc="(400,280)" name="Splitter">
-      <a name="fanout" val="3"/>
-      <a name="incoming" val="3"/>
-    </comp>
+    <comp loc="(230,280)" name="IfThenElseOneBit"/>
     <comp lib="0" loc="(490,240)" name="Splitter">
       <a name="facing" val="west"/>
       <a name="fanout" val="4"/>
       <a name="incoming" val="4"/>
     </comp>
-    <comp lib="0" loc="(550,240)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="4"/>
-      <a name="label" val="C"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(100,370)" name="Pin">
-      <a name="width" val="4"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="B"/>
-    </comp>
-    <comp loc="(350,280)" name="IfThenElseThreeBits"/>
-    <comp loc="(230,280)" name="IfThenElseOneBit"/>
-    <comp lib="0" loc="(140,370)" name="Splitter">
+    <comp lib="0" loc="(140,180)" name="Splitter">
       <a name="fanout" val="4"/>
       <a name="incoming" val="4"/>
     </comp>
-    <comp lib="0" loc="(100,180)" name="Pin">
-      <a name="width" val="4"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="A"/>
-    </comp>
-    <comp lib="0" loc="(140,180)" name="Splitter">
+    <comp lib="0" loc="(140,370)" name="Splitter">
       <a name="fanout" val="4"/>
       <a name="incoming" val="4"/>
     </comp>
@@ -397,9 +397,34 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(230,230)" to="(370,230)"/>
     <wire from="(340,250)" to="(340,310)"/>
     <wire from="(270,280)" to="(470,280)"/>
+    <comp loc="(400,240)" name="IfThenElseFourBits"/>
+    <comp loc="(270,280)" name="IfThenElseOneBit"/>
+    <comp lib="0" loc="(320,310)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
+    </comp>
+    <comp lib="0" loc="(110,120)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="COND"/>
+    </comp>
     <comp lib="0" loc="(450,240)" name="Splitter">
       <a name="fanout" val="4"/>
       <a name="incoming" val="4"/>
+    </comp>
+    <comp lib="0" loc="(170,200)" name="Splitter">
+      <a name="fanout" val="5"/>
+      <a name="incoming" val="5"/>
+    </comp>
+    <comp lib="0" loc="(320,140)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
+    </comp>
+    <comp lib="0" loc="(120,370)" name="Pin">
+      <a name="width" val="5"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B"/>
     </comp>
     <comp lib="0" loc="(590,190)" name="Pin">
       <a name="facing" val="west"/>
@@ -413,39 +438,173 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="fanout" val="5"/>
       <a name="incoming" val="5"/>
     </comp>
-    <comp lib="0" loc="(120,370)" name="Pin">
-      <a name="width" val="5"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="B"/>
-    </comp>
-    <comp lib="0" loc="(170,200)" name="Splitter">
+    <comp lib="0" loc="(170,370)" name="Splitter">
       <a name="fanout" val="5"/>
       <a name="incoming" val="5"/>
     </comp>
-    <comp loc="(400,240)" name="IfThenElseFourBits"/>
     <comp lib="0" loc="(120,200)" name="Pin">
       <a name="width" val="5"/>
       <a name="tristate" val="false"/>
       <a name="label" val="A"/>
     </comp>
-    <comp lib="0" loc="(110,120)" name="Pin">
+  </circuit>
+  <circuit name="IfThenElseSixBits">
+    <a name="circuit" val="IfThenElseSixBits"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(190,310)" to="(220,310)"/>
+    <wire from="(250,260)" to="(280,260)"/>
+    <wire from="(190,280)" to="(280,280)"/>
+    <wire from="(250,170)" to="(250,210)"/>
+    <wire from="(230,270)" to="(280,270)"/>
+    <wire from="(140,170)" to="(250,170)"/>
+    <wire from="(300,220)" to="(300,240)"/>
+    <wire from="(250,210)" to="(250,260)"/>
+    <wire from="(300,240)" to="(310,240)"/>
+    <wire from="(290,220)" to="(300,220)"/>
+    <wire from="(220,230)" to="(220,310)"/>
+    <wire from="(230,190)" to="(230,270)"/>
+    <wire from="(250,210)" to="(260,210)"/>
+    <wire from="(190,220)" to="(260,220)"/>
+    <wire from="(190,190)" to="(230,190)"/>
+    <wire from="(220,230)" to="(260,230)"/>
+    <comp lib="0" loc="(150,260)" name="Splitter">
+      <a name="fanout" val="6"/>
+      <a name="incoming" val="6"/>
+    </comp>
+    <comp lib="0" loc="(150,260)" name="Pin">
+      <a name="width" val="6"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="A"/>
+    </comp>
+    <comp lib="0" loc="(150,350)" name="Splitter">
+      <a name="fanout" val="6"/>
+      <a name="incoming" val="6"/>
+    </comp>
+    <comp lib="0" loc="(350,200)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="6"/>
+      <a name="label" val="C"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(190,220)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+    </comp>
+    <comp lib="0" loc="(190,280)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+    </comp>
+    <comp lib="0" loc="(310,240)" name="Splitter">
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+    </comp>
+    <comp lib="0" loc="(190,190)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+    </comp>
+    <comp loc="(310,270)" name="IfThenElseThreeBits"/>
+    <comp lib="0" loc="(310,270)" name="Splitter">
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+    </comp>
+    <comp loc="(290,220)" name="IfThenElseThreeBits"/>
+    <comp lib="0" loc="(190,310)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+    </comp>
+    <comp lib="0" loc="(350,200)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="6"/>
+      <a name="incoming" val="6"/>
+    </comp>
+    <comp lib="0" loc="(140,170)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="COND"/>
     </comp>
-    <comp loc="(270,280)" name="IfThenElseOneBit"/>
-    <comp lib="0" loc="(170,370)" name="Splitter">
-      <a name="fanout" val="5"/>
-      <a name="incoming" val="5"/>
+    <comp lib="0" loc="(150,350)" name="Pin">
+      <a name="width" val="6"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B"/>
     </comp>
-    <comp lib="0" loc="(320,140)" name="Splitter">
+  </circuit>
+  <circuit name="IfThenElseSevenBits">
+    <a name="circuit" val="IfThenElseSevenBits"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(160,160)" to="(190,160)"/>
+    <wire from="(170,250)" to="(200,250)"/>
+    <wire from="(170,220)" to="(200,220)"/>
+    <wire from="(190,160)" to="(190,230)"/>
+    <wire from="(170,150)" to="(170,220)"/>
+    <wire from="(180,270)" to="(180,310)"/>
+    <wire from="(180,260)" to="(200,260)"/>
+    <wire from="(180,270)" to="(200,270)"/>
+    <wire from="(230,260)" to="(250,260)"/>
+    <wire from="(190,230)" to="(200,230)"/>
+    <wire from="(140,230)" to="(180,230)"/>
+    <wire from="(140,310)" to="(180,310)"/>
+    <wire from="(160,240)" to="(200,240)"/>
+    <wire from="(100,150)" to="(170,150)"/>
+    <wire from="(180,230)" to="(180,260)"/>
+    <wire from="(170,220)" to="(170,250)"/>
+    <wire from="(250,230)" to="(250,260)"/>
+    <comp lib="0" loc="(160,160)" name="Splitter">
       <a name="facing" val="west"/>
-      <a name="fanout" val="4"/>
-      <a name="incoming" val="4"/>
+      <a name="fanout" val="6"/>
+      <a name="incoming" val="6"/>
     </comp>
-    <comp lib="0" loc="(320,310)" name="Splitter">
+    <comp lib="0" loc="(270,160)" name="Pin">
       <a name="facing" val="west"/>
-      <a name="fanout" val="4"/>
-      <a name="incoming" val="4"/>
+      <a name="output" val="true"/>
+      <a name="width" val="7"/>
+      <a name="label" val="C"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(120,240)" name="Splitter">
+      <a name="fanout" val="7"/>
+      <a name="incoming" val="7"/>
+    </comp>
+    <comp lib="0" loc="(270,160)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="7"/>
+      <a name="incoming" val="7"/>
+    </comp>
+    <comp loc="(230,260)" name="IfThenElseOneBit"/>
+    <comp lib="0" loc="(120,320)" name="Splitter">
+      <a name="fanout" val="7"/>
+      <a name="incoming" val="7"/>
+    </comp>
+    <comp loc="(230,230)" name="IfThenElseSixBits"/>
+    <comp lib="0" loc="(120,240)" name="Pin">
+      <a name="width" val="7"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="A"/>
+    </comp>
+    <comp lib="0" loc="(100,150)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="COND"/>
+    </comp>
+    <comp lib="0" loc="(160,240)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="6"/>
+      <a name="incoming" val="6"/>
+    </comp>
+    <comp lib="0" loc="(120,320)" name="Pin">
+      <a name="width" val="7"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B"/>
+    </comp>
+    <comp lib="0" loc="(230,230)" name="Splitter">
+      <a name="fanout" val="6"/>
+      <a name="incoming" val="6"/>
     </comp>
   </circuit>
 </project>
