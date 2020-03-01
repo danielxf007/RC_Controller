@@ -15,7 +15,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="valign" val="base"/>
     </tool>
   </lib>
-  <lib desc="file#C:\Users\user\Documents\RC_Controller\SpeedSystem\Switch.circ" name="7"/>
+  <lib desc="file#Switch.circ" name="7"/>
   <main name="SevenSegmentRepresentation"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -87,20 +87,19 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="7"/>
       <a name="value" val="0x3f"/>
     </comp>
-    <comp lib="0" loc="(290,220)" name="Constant">
-      <a name="width" val="7"/>
-      <a name="value" val="0x6d"/>
-    </comp>
-    <comp lib="0" loc="(290,180)" name="Constant">
-      <a name="width" val="7"/>
-      <a name="value" val="0x4f"/>
-    </comp>
-    <comp lib="0" loc="(150,200)" name="Constant">
-      <a name="width" val="3"/>
-    </comp>
+    <comp lib="7" loc="(330,190)" name="SwitchThreeCase7Bit"/>
     <comp lib="0" loc="(290,200)" name="Constant">
       <a name="width" val="7"/>
       <a name="value" val="0x66"/>
+    </comp>
+    <comp lib="0" loc="(270,190)" name="Constant">
+      <a name="width" val="3"/>
+      <a name="value" val="0x4"/>
+    </comp>
+    <comp lib="7" loc="(210,200)" name="SwitchThreeCase7Bit"/>
+    <comp lib="0" loc="(170,230)" name="Constant">
+      <a name="width" val="7"/>
+      <a name="value" val="0x5b"/>
     </comp>
     <comp lib="0" loc="(150,180)" name="Constant">
       <a name="width" val="3"/>
@@ -110,9 +109,26 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="7"/>
       <a name="value" val="0x6"/>
     </comp>
-    <comp lib="0" loc="(150,220)" name="Constant">
+    <comp lib="0" loc="(150,240)" name="Constant">
+      <a name="width" val="7"/>
+      <a name="value" val="0x27"/>
+    </comp>
+    <comp lib="7" loc="(410,160)" name="SwitchOneCase7Bits"/>
+    <comp lib="0" loc="(290,180)" name="Constant">
+      <a name="width" val="7"/>
+      <a name="value" val="0x4f"/>
+    </comp>
+    <comp lib="0" loc="(360,160)" name="Constant">
       <a name="width" val="3"/>
-      <a name="value" val="0x2"/>
+      <a name="value" val="0x6"/>
+    </comp>
+    <comp lib="0" loc="(130,170)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Number"/>
+    </comp>
+    <comp lib="0" loc="(150,200)" name="Constant">
+      <a name="width" val="3"/>
     </comp>
     <comp lib="0" loc="(430,160)" name="Pin">
       <a name="facing" val="west"/>
@@ -121,41 +137,25 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="7SegmentNumber"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(130,170)" name="Pin">
+    <comp lib="0" loc="(150,220)" name="Constant">
       <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="Number"/>
-    </comp>
-    <comp lib="7" loc="(410,160)" name="SwitchOneCase7Bits"/>
-    <comp lib="0" loc="(360,160)" name="Constant">
-      <a name="width" val="3"/>
-      <a name="value" val="0x6"/>
-    </comp>
-    <comp lib="0" loc="(370,170)" name="Constant">
-      <a name="width" val="7"/>
-      <a name="value" val="0x79"/>
-    </comp>
-    <comp lib="0" loc="(170,230)" name="Constant">
-      <a name="width" val="7"/>
-      <a name="value" val="0x5b"/>
-    </comp>
-    <comp lib="0" loc="(270,190)" name="Constant">
-      <a name="width" val="3"/>
-      <a name="value" val="0x4"/>
+      <a name="value" val="0x2"/>
     </comp>
     <comp lib="0" loc="(270,170)" name="Constant">
       <a name="width" val="3"/>
       <a name="value" val="0x3"/>
     </comp>
-    <comp lib="0" loc="(150,240)" name="Constant">
-      <a name="width" val="7"/>
-      <a name="value" val="0x27"/>
-    </comp>
-    <comp lib="7" loc="(330,190)" name="SwitchThreeCase7Bit"/>
     <comp lib="0" loc="(270,210)" name="Constant">
       <a name="width" val="3"/>
       <a name="value" val="0x5"/>
     </comp>
-    <comp lib="7" loc="(210,200)" name="SwitchThreeCase7Bit"/>
+    <comp lib="0" loc="(290,220)" name="Constant">
+      <a name="width" val="7"/>
+      <a name="value" val="0x6d"/>
+    </comp>
+    <comp lib="0" loc="(370,170)" name="Constant">
+      <a name="width" val="7"/>
+      <a name="value" val="0x79"/>
+    </comp>
   </circuit>
 </project>
