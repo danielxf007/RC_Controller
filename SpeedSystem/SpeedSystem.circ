@@ -21,8 +21,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="valign" val="base"/>
     </tool>
   </lib>
-  <lib desc="file#SpeedController.circ" name="7"/>
-  <lib desc="file#SevenSegmentRepresentation.circ" name="8"/>
+  <lib desc="file#SevenSegmentRepresentation.circ" name="7"/>
+  <lib desc="file#ButtonSpeedSystem.circ" name="8"/>
   <main name="SpeedSystem"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -61,38 +61,31 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(370,140)" to="(380,140)"/>
     <wire from="(370,190)" to="(530,190)"/>
     <wire from="(370,200)" to="(560,200)"/>
     <wire from="(330,210)" to="(350,210)"/>
-    <wire from="(170,210)" to="(220,210)"/>
-    <wire from="(250,210)" to="(300,210)"/>
-    <wire from="(200,220)" to="(220,220)"/>
-    <wire from="(370,140)" to="(380,140)"/>
     <wire from="(370,170)" to="(470,170)"/>
     <wire from="(370,180)" to="(500,180)"/>
+    <wire from="(170,210)" to="(220,210)"/>
+    <wire from="(250,210)" to="(300,210)"/>
     <wire from="(370,150)" to="(410,150)"/>
+    <wire from="(200,220)" to="(220,220)"/>
     <wire from="(370,160)" to="(440,160)"/>
-    <comp lib="0" loc="(500,180)" name="Pin">
+    <comp lib="0" loc="(410,150)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
-      <a name="label" val="e"/>
+      <a name="label" val="b"/>
       <a name="labelloc" val="east"/>
     </comp>
     <comp lib="0" loc="(170,210)" name="Pin">
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="7" loc="(250,210)" name="SpeedController"/>
-    <comp lib="8" loc="(330,210)" name="SevenSegmentRepresentation"/>
-    <comp lib="0" loc="(560,200)" name="Pin">
+    <comp lib="7" loc="(330,210)" name="SevenSegmentRepresentation"/>
+    <comp lib="0" loc="(500,180)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
-      <a name="label" val="g"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(410,150)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="b"/>
+      <a name="label" val="e"/>
       <a name="labelloc" val="east"/>
     </comp>
     <comp lib="0" loc="(380,140)" name="Pin">
@@ -107,15 +100,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="f"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(350,210)" name="Splitter">
-      <a name="fanout" val="7"/>
-      <a name="incoming" val="7"/>
-    </comp>
-    <comp lib="0" loc="(440,160)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="c"/>
-      <a name="labelloc" val="east"/>
+    <comp lib="0" loc="(200,220)" name="Pin">
+      <a name="tristate" val="false"/>
     </comp>
     <comp lib="0" loc="(470,170)" name="Pin">
       <a name="facing" val="west"/>
@@ -123,8 +109,22 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="d"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(200,220)" name="Pin">
-      <a name="tristate" val="false"/>
+    <comp lib="0" loc="(560,200)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="g"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(350,210)" name="Splitter">
+      <a name="fanout" val="7"/>
+      <a name="incoming" val="7"/>
+    </comp>
+    <comp lib="8" loc="(250,210)" name="ButtonSpeedSystem"/>
+    <comp lib="0" loc="(440,160)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="c"/>
+      <a name="labelloc" val="east"/>
     </comp>
   </circuit>
 </project>
