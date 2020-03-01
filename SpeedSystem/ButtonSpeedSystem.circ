@@ -21,10 +21,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="valign" val="base"/>
     </tool>
   </lib>
-  <lib desc="file#Adder.circ" name="7"/>
-  <lib desc="file#SumAdjuster.circ" name="8"/>
-  <lib desc="file#ButtonInput.circ" name="9"/>
-  <lib desc="file#ButtonInputConverter.circ" name="10"/>
+  <lib desc="file#ButtonSpeed.circ" name="7"/>
+  <lib desc="file#SevenSegmentRepresentation.circ" name="8"/>
   <main name="ButtonSpeedSystem"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -63,65 +61,106 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <wire from="(190,220)" to="(190,230)"/>
-    <wire from="(140,270)" to="(140,280)"/>
-    <wire from="(160,280)" to="(160,290)"/>
-    <wire from="(420,260)" to="(420,270)"/>
-    <wire from="(220,260)" to="(270,260)"/>
-    <wire from="(40,270)" to="(90,270)"/>
-    <wire from="(140,150)" to="(380,150)"/>
-    <wire from="(130,270)" to="(130,290)"/>
-    <wire from="(140,200)" to="(180,200)"/>
-    <wire from="(230,250)" to="(270,250)"/>
-    <wire from="(130,290)" to="(160,290)"/>
-    <wire from="(380,150)" to="(380,250)"/>
-    <wire from="(350,250)" to="(380,250)"/>
-    <wire from="(300,250)" to="(320,250)"/>
-    <wire from="(380,250)" to="(400,250)"/>
-    <wire from="(430,250)" to="(450,250)"/>
-    <wire from="(70,280)" to="(90,280)"/>
-    <wire from="(120,280)" to="(140,280)"/>
-    <wire from="(170,230)" to="(190,230)"/>
-    <wire from="(140,270)" to="(160,270)"/>
-    <wire from="(210,200)" to="(230,200)"/>
-    <wire from="(140,150)" to="(140,200)"/>
-    <wire from="(420,270)" to="(430,270)"/>
-    <wire from="(230,200)" to="(230,250)"/>
-    <wire from="(180,260)" to="(190,260)"/>
-    <wire from="(120,270)" to="(130,270)"/>
-    <comp lib="0" loc="(40,270)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="U"/>
-    </comp>
-    <comp lib="4" loc="(210,200)" name="Register">
-      <a name="width" val="4"/>
-    </comp>
-    <comp lib="0" loc="(180,260)" name="Splitter">
-      <a name="facing" val="west"/>
-    </comp>
-    <comp lib="2" loc="(430,250)" name="BitSelector">
-      <a name="width" val="4"/>
-      <a name="group" val="3"/>
-    </comp>
-    <comp lib="0" loc="(170,230)" name="Clock"/>
-    <comp lib="10" loc="(220,260)" name="ButtonInputConverter"/>
-    <comp lib="9" loc="(120,270)" name="ButtonInput"/>
-    <comp lib="0" loc="(70,280)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="D"/>
-    </comp>
-    <comp lib="7" loc="(300,250)" name="Adder4Bits"/>
-    <comp lib="0" loc="(430,270)" name="Constant">
-      <a name="facing" val="west"/>
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="0" loc="(450,250)" name="Pin">
+    <wire from="(370,190)" to="(430,190)"/>
+    <wire from="(130,190)" to="(130,260)"/>
+    <wire from="(90,270)" to="(150,270)"/>
+    <wire from="(190,270)" to="(190,280)"/>
+    <wire from="(370,230)" to="(550,230)"/>
+    <wire from="(70,240)" to="(70,250)"/>
+    <wire from="(180,260)" to="(230,260)"/>
+    <wire from="(370,210)" to="(490,210)"/>
+    <wire from="(30,160)" to="(270,160)"/>
+    <wire from="(270,160)" to="(270,240)"/>
+    <wire from="(200,250)" to="(200,270)"/>
+    <wire from="(110,240)" to="(150,240)"/>
+    <wire from="(220,250)" to="(220,280)"/>
+    <wire from="(110,210)" to="(110,240)"/>
+    <wire from="(200,270)" to="(230,270)"/>
+    <wire from="(190,280)" to="(220,280)"/>
+    <wire from="(30,220)" to="(60,220)"/>
+    <wire from="(120,280)" to="(150,280)"/>
+    <wire from="(120,250)" to="(150,250)"/>
+    <wire from="(370,200)" to="(460,200)"/>
+    <wire from="(320,240)" to="(350,240)"/>
+    <wire from="(370,180)" to="(400,180)"/>
+    <wire from="(270,240)" to="(290,240)"/>
+    <wire from="(50,250)" to="(70,250)"/>
+    <wire from="(110,190)" to="(130,190)"/>
+    <wire from="(130,260)" to="(150,260)"/>
+    <wire from="(180,250)" to="(200,250)"/>
+    <wire from="(250,240)" to="(270,240)"/>
+    <wire from="(370,220)" to="(520,220)"/>
+    <wire from="(120,200)" to="(120,250)"/>
+    <wire from="(180,270)" to="(190,270)"/>
+    <wire from="(220,250)" to="(230,250)"/>
+    <wire from="(110,200)" to="(120,200)"/>
+    <wire from="(30,160)" to="(30,220)"/>
+    <comp lib="0" loc="(400,180)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
-      <a name="width" val="3"/>
-      <a name="label" val="Speed"/>
+      <a name="label" val="b"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="8" loc="(350,250)" name="SumAdjuster"/>
+    <comp lib="0" loc="(520,220)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="f"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(90,220)" name="Splitter">
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+    </comp>
+    <comp lib="0" loc="(550,230)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="g"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(90,270)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="4" loc="(90,220)" name="Register">
+      <a name="width" val="3"/>
+    </comp>
+    <comp lib="7" loc="(180,250)" name="ButtonSpeed"/>
+    <comp lib="0" loc="(50,250)" name="Clock"/>
+    <comp lib="0" loc="(460,200)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="d"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(490,210)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="e"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(430,190)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="c"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="8" loc="(320,240)" name="SevenSegmentRepresentation"/>
+    <comp lib="0" loc="(120,280)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(350,240)" name="Splitter">
+      <a name="fanout" val="7"/>
+      <a name="incoming" val="7"/>
+    </comp>
+    <comp lib="0" loc="(370,170)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="a"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(250,240)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+    </comp>
   </circuit>
 </project>
