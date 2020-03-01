@@ -5,7 +5,13 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
   <lib desc="#Gates" name="1"/>
   <lib desc="#Plexers" name="2"/>
   <lib desc="#Arithmetic" name="3"/>
-  <lib desc="#Memory" name="4"/>
+  <lib desc="#Memory" name="4">
+    <tool name="ROM">
+      <a name="contents">addr/data: 8 8
+0
+</a>
+    </tool>
+  </lib>
   <lib desc="#I/O" name="5"/>
   <lib desc="#Base" name="6">
     <tool name="Text Tool">
@@ -15,8 +21,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="valign" val="base"/>
     </tool>
   </lib>
-  <lib desc="file#IfThenElseStatements.circ" name="7"/>
-  <lib desc="file#Equality.circ" name="8"/>
+  <lib desc="file#Equality.circ" name="7"/>
   <main name="SwitchThreeCase7Bit"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -55,98 +60,92 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <wire from="(150,330)" to="(340,330)"/>
-    <wire from="(150,220)" to="(340,220)"/>
-    <wire from="(200,120)" to="(450,120)"/>
-    <wire from="(370,270)" to="(560,270)"/>
-    <wire from="(480,370)" to="(530,370)"/>
-    <wire from="(160,420)" to="(280,420)"/>
-    <wire from="(150,90)" to="(200,90)"/>
-    <wire from="(150,140)" to="(200,140)"/>
-    <wire from="(590,270)" to="(650,270)"/>
-    <wire from="(720,160)" to="(780,160)"/>
-    <wire from="(390,260)" to="(560,260)"/>
-    <wire from="(370,250)" to="(370,270)"/>
-    <wire from="(650,170)" to="(690,170)"/>
-    <wire from="(280,380)" to="(450,380)"/>
-    <wire from="(530,280)" to="(530,370)"/>
-    <wire from="(200,160)" to="(690,160)"/>
-    <wire from="(270,110)" to="(270,320)"/>
-    <wire from="(200,120)" to="(200,140)"/>
-    <wire from="(200,160)" to="(200,180)"/>
-    <wire from="(200,90)" to="(200,110)"/>
-    <wire from="(160,180)" to="(200,180)"/>
-    <wire from="(270,110)" to="(310,110)"/>
-    <wire from="(160,370)" to="(450,370)"/>
-    <wire from="(370,320)" to="(410,320)"/>
-    <wire from="(410,360)" to="(450,360)"/>
-    <wire from="(310,110)" to="(310,210)"/>
-    <wire from="(310,210)" to="(340,210)"/>
-    <wire from="(370,210)" to="(390,210)"/>
-    <wire from="(530,280)" to="(560,280)"/>
-    <wire from="(160,250)" to="(370,250)"/>
-    <wire from="(280,380)" to="(280,420)"/>
-    <wire from="(650,170)" to="(650,270)"/>
-    <wire from="(410,320)" to="(410,360)"/>
-    <wire from="(490,110)" to="(490,150)"/>
-    <wire from="(310,110)" to="(450,110)"/>
-    <wire from="(480,110)" to="(490,110)"/>
-    <wire from="(390,210)" to="(390,260)"/>
-    <wire from="(200,110)" to="(270,110)"/>
-    <wire from="(270,320)" to="(340,320)"/>
-    <wire from="(490,150)" to="(690,150)"/>
-    <comp lib="8" loc="(370,320)" name="Equality3Bits"/>
-    <comp lib="8" loc="(480,110)" name="Equality3Bits"/>
-    <comp lib="8" loc="(370,210)" name="Equality3Bits"/>
-    <comp lib="0" loc="(160,180)" name="Pin">
+    <wire from="(140,360)" to="(330,360)"/>
+    <wire from="(330,290)" to="(330,360)"/>
+    <wire from="(160,210)" to="(160,280)"/>
+    <wire from="(160,130)" to="(210,130)"/>
+    <wire from="(160,210)" to="(210,210)"/>
+    <wire from="(160,280)" to="(210,280)"/>
+    <wire from="(360,100)" to="(360,110)"/>
+    <wire from="(160,130)" to="(160,210)"/>
+    <wire from="(140,180)" to="(370,180)"/>
+    <wire from="(120,90)" to="(160,90)"/>
+    <wire from="(360,220)" to="(360,250)"/>
+    <wire from="(240,130)" to="(340,130)"/>
+    <wire from="(120,290)" to="(210,290)"/>
+    <wire from="(240,210)" to="(330,210)"/>
+    <wire from="(140,250)" to="(360,250)"/>
+    <wire from="(120,140)" to="(210,140)"/>
+    <wire from="(120,220)" to="(210,220)"/>
+    <wire from="(160,90)" to="(160,130)"/>
+    <wire from="(140,330)" to="(350,330)"/>
+    <wire from="(370,140)" to="(370,180)"/>
+    <wire from="(340,220)" to="(340,260)"/>
+    <wire from="(350,290)" to="(350,330)"/>
+    <wire from="(240,280)" to="(320,280)"/>
+    <wire from="(350,140)" to="(350,190)"/>
+    <wire from="(360,100)" to="(430,100)"/>
+    <comp lib="7" loc="(240,130)" name="Equality3Bits"/>
+    <comp lib="2" loc="(340,260)" name="Multiplexer">
+      <a name="facing" val="north"/>
+      <a name="width" val="7"/>
+    </comp>
+    <comp lib="2" loc="(360,110)" name="Multiplexer">
+      <a name="facing" val="north"/>
+      <a name="width" val="7"/>
+    </comp>
+    <comp lib="2" loc="(350,190)" name="Multiplexer">
+      <a name="facing" val="north"/>
+      <a name="width" val="7"/>
+    </comp>
+    <comp lib="0" loc="(140,360)" name="Pin">
+      <a name="width" val="7"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="DEFAULT"/>
+    </comp>
+    <comp lib="0" loc="(140,180)" name="Pin">
       <a name="width" val="7"/>
       <a name="tristate" val="false"/>
       <a name="label" val="FirstValue"/>
     </comp>
-    <comp lib="0" loc="(160,370)" name="Pin">
-      <a name="width" val="7"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ThirdValue"/>
-    </comp>
-    <comp lib="7" loc="(480,370)" name="IfThenElseSevenBits"/>
-    <comp lib="0" loc="(150,140)" name="Pin">
+    <comp lib="7" loc="(240,280)" name="Equality3Bits"/>
+    <comp lib="7" loc="(240,210)" name="Equality3Bits"/>
+    <comp lib="0" loc="(120,140)" name="Pin">
       <a name="width" val="3"/>
       <a name="tristate" val="false"/>
       <a name="label" val="FirstCase"/>
     </comp>
-    <comp lib="0" loc="(150,330)" name="Pin">
+    <comp lib="0" loc="(120,290)" name="Pin">
       <a name="width" val="3"/>
       <a name="tristate" val="false"/>
       <a name="label" val="ThirdCase"/>
     </comp>
-    <comp lib="0" loc="(780,160)" name="Pin">
+    <comp lib="0" loc="(140,330)" name="Pin">
+      <a name="width" val="7"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ThirdValue"/>
+    </comp>
+    <comp lib="0" loc="(120,90)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Value"/>
+    </comp>
+    <comp lib="0" loc="(120,220)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="SecondCase"/>
+    </comp>
+    <comp lib="0" loc="(140,250)" name="Pin">
+      <a name="width" val="7"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="SecondValue"/>
+    </comp>
+    <comp lib="0" loc="(430,100)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="width" val="7"/>
       <a name="label" val="ReturnedValue"/>
       <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(160,250)" name="Pin">
-      <a name="width" val="7"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="SecondValue"/>
-    </comp>
-    <comp lib="7" loc="(590,270)" name="IfThenElseSevenBits"/>
-    <comp lib="0" loc="(160,420)" name="Pin">
-      <a name="width" val="7"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="DEFAULT"/>
-    </comp>
-    <comp lib="7" loc="(720,160)" name="IfThenElseSevenBits"/>
-    <comp lib="0" loc="(150,90)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="Value"/>
-    </comp>
-    <comp lib="0" loc="(150,220)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="SecondCase"/>
     </comp>
   </circuit>
   <circuit name="SwitchOneCase7Bits">
@@ -154,48 +153,50 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <wire from="(230,120)" to="(260,120)"/>
-    <wire from="(290,120)" to="(310,120)"/>
+    <wire from="(280,120)" to="(280,220)"/>
+    <wire from="(160,220)" to="(280,220)"/>
+    <wire from="(220,110)" to="(270,110)"/>
     <wire from="(150,90)" to="(170,90)"/>
     <wire from="(170,110)" to="(190,110)"/>
     <wire from="(150,140)" to="(170,140)"/>
     <wire from="(170,120)" to="(190,120)"/>
-    <wire from="(240,130)" to="(260,130)"/>
-    <wire from="(160,220)" to="(240,220)"/>
+    <wire from="(290,80)" to="(290,90)"/>
     <wire from="(170,90)" to="(170,110)"/>
     <wire from="(170,120)" to="(170,140)"/>
-    <wire from="(160,180)" to="(230,180)"/>
-    <wire from="(240,130)" to="(240,220)"/>
-    <wire from="(220,110)" to="(260,110)"/>
-    <wire from="(230,120)" to="(230,180)"/>
-    <comp lib="0" loc="(150,90)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="Value"/>
-    </comp>
-    <comp lib="0" loc="(310,120)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
+    <wire from="(160,180)" to="(300,180)"/>
+    <wire from="(300,120)" to="(300,180)"/>
+    <wire from="(290,80)" to="(360,80)"/>
+    <comp lib="0" loc="(160,180)" name="Pin">
       <a name="width" val="7"/>
-      <a name="label" val="ReturnedValue"/>
-      <a name="labelloc" val="east"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="FirstValue"/>
+    </comp>
+    <comp lib="2" loc="(290,90)" name="Multiplexer">
+      <a name="facing" val="north"/>
+      <a name="width" val="7"/>
     </comp>
     <comp lib="0" loc="(160,220)" name="Pin">
       <a name="width" val="7"/>
       <a name="tristate" val="false"/>
       <a name="label" val="Default"/>
     </comp>
-    <comp lib="7" loc="(290,120)" name="IfThenElseSevenBits"/>
+    <comp lib="0" loc="(150,90)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Value"/>
+    </comp>
+    <comp lib="0" loc="(360,80)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="7"/>
+      <a name="label" val="ReturnedValue"/>
+      <a name="labelloc" val="east"/>
+    </comp>
     <comp lib="0" loc="(150,140)" name="Pin">
       <a name="width" val="3"/>
       <a name="tristate" val="false"/>
       <a name="label" val="FirstCase"/>
     </comp>
-    <comp lib="8" loc="(220,110)" name="Equality3Bits"/>
-    <comp lib="0" loc="(160,180)" name="Pin">
-      <a name="width" val="7"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="FirstValue"/>
-    </comp>
+    <comp lib="7" loc="(220,110)" name="Equality3Bits"/>
   </circuit>
 </project>

@@ -5,7 +5,13 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
   <lib desc="#Gates" name="1"/>
   <lib desc="#Plexers" name="2"/>
   <lib desc="#Arithmetic" name="3"/>
-  <lib desc="#Memory" name="4"/>
+  <lib desc="#Memory" name="4">
+    <tool name="ROM">
+      <a name="contents">addr/data: 8 8
+0
+</a>
+    </tool>
+  </lib>
   <lib desc="#I/O" name="5"/>
   <lib desc="#Base" name="6">
     <tool name="Text Tool">
@@ -87,48 +93,34 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="7"/>
       <a name="value" val="0x3f"/>
     </comp>
-    <comp lib="7" loc="(330,190)" name="SwitchThreeCase7Bit"/>
     <comp lib="0" loc="(290,200)" name="Constant">
       <a name="width" val="7"/>
       <a name="value" val="0x66"/>
     </comp>
-    <comp lib="0" loc="(270,190)" name="Constant">
+    <comp lib="7" loc="(330,190)" name="SwitchThreeCase7Bit"/>
+    <comp lib="7" loc="(410,160)" name="SwitchOneCase7Bits"/>
+    <comp lib="0" loc="(150,200)" name="Constant">
       <a name="width" val="3"/>
-      <a name="value" val="0x4"/>
     </comp>
-    <comp lib="7" loc="(210,200)" name="SwitchThreeCase7Bit"/>
-    <comp lib="0" loc="(170,230)" name="Constant">
+    <comp lib="0" loc="(370,170)" name="Constant">
       <a name="width" val="7"/>
-      <a name="value" val="0x5b"/>
+      <a name="value" val="0x79"/>
     </comp>
     <comp lib="0" loc="(150,180)" name="Constant">
       <a name="width" val="3"/>
       <a name="value" val="0x0"/>
     </comp>
-    <comp lib="0" loc="(170,210)" name="Constant">
+    <comp lib="0" loc="(290,220)" name="Constant">
       <a name="width" val="7"/>
-      <a name="value" val="0x6"/>
+      <a name="value" val="0x6d"/>
     </comp>
-    <comp lib="0" loc="(150,240)" name="Constant">
-      <a name="width" val="7"/>
-      <a name="value" val="0x27"/>
-    </comp>
-    <comp lib="7" loc="(410,160)" name="SwitchOneCase7Bits"/>
-    <comp lib="0" loc="(290,180)" name="Constant">
-      <a name="width" val="7"/>
-      <a name="value" val="0x4f"/>
-    </comp>
-    <comp lib="0" loc="(360,160)" name="Constant">
+    <comp lib="0" loc="(270,210)" name="Constant">
       <a name="width" val="3"/>
-      <a name="value" val="0x6"/>
+      <a name="value" val="0x5"/>
     </comp>
-    <comp lib="0" loc="(130,170)" name="Pin">
+    <comp lib="0" loc="(270,170)" name="Constant">
       <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="Number"/>
-    </comp>
-    <comp lib="0" loc="(150,200)" name="Constant">
-      <a name="width" val="3"/>
+      <a name="value" val="0x3"/>
     </comp>
     <comp lib="0" loc="(430,160)" name="Pin">
       <a name="facing" val="west"/>
@@ -141,21 +133,35 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="3"/>
       <a name="value" val="0x2"/>
     </comp>
-    <comp lib="0" loc="(270,170)" name="Constant">
-      <a name="width" val="3"/>
-      <a name="value" val="0x3"/>
-    </comp>
-    <comp lib="0" loc="(270,210)" name="Constant">
-      <a name="width" val="3"/>
-      <a name="value" val="0x5"/>
-    </comp>
-    <comp lib="0" loc="(290,220)" name="Constant">
+    <comp lib="0" loc="(170,210)" name="Constant">
       <a name="width" val="7"/>
-      <a name="value" val="0x6d"/>
+      <a name="value" val="0x6"/>
     </comp>
-    <comp lib="0" loc="(370,170)" name="Constant">
+    <comp lib="0" loc="(360,160)" name="Constant">
+      <a name="width" val="3"/>
+      <a name="value" val="0x6"/>
+    </comp>
+    <comp lib="0" loc="(270,190)" name="Constant">
+      <a name="width" val="3"/>
+      <a name="value" val="0x4"/>
+    </comp>
+    <comp lib="7" loc="(210,200)" name="SwitchThreeCase7Bit"/>
+    <comp lib="0" loc="(150,240)" name="Constant">
       <a name="width" val="7"/>
-      <a name="value" val="0x79"/>
+      <a name="value" val="0x27"/>
+    </comp>
+    <comp lib="0" loc="(290,180)" name="Constant">
+      <a name="width" val="7"/>
+      <a name="value" val="0x4f"/>
+    </comp>
+    <comp lib="0" loc="(170,230)" name="Constant">
+      <a name="width" val="7"/>
+      <a name="value" val="0x5b"/>
+    </comp>
+    <comp lib="0" loc="(130,170)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Number"/>
     </comp>
   </circuit>
 </project>
