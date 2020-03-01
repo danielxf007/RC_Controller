@@ -71,38 +71,20 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(230,210)" to="(230,220)"/>
     <wire from="(210,290)" to="(360,290)"/>
     <wire from="(230,220)" to="(360,220)"/>
-    <comp lib="0" loc="(210,290)" name="Constant">
-      <a name="width" val="4"/>
-      <a name="value" val="0xf"/>
-    </comp>
     <comp lib="0" loc="(220,210)" name="Pin">
       <a name="width" val="3"/>
       <a name="tristate" val="false"/>
       <a name="label" val="JoystickY"/>
     </comp>
+    <comp lib="0" loc="(210,290)" name="Constant">
+      <a name="width" val="4"/>
+      <a name="value" val="0xf"/>
+    </comp>
+    <comp lib="7" loc="(390,250)" name="ThreeCaseSwitch4Bits"/>
     <comp lib="0" loc="(250,240)" name="Constant">
       <a name="width" val="4"/>
       <a name="value" val="0x9"/>
     </comp>
-    <comp lib="0" loc="(250,280)" name="Constant">
-      <a name="width" val="4"/>
-      <a name="value" val="0x7"/>
-    </comp>
-    <comp lib="0" loc="(220,250)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="DownDir"/>
-    </comp>
-    <comp lib="0" loc="(220,270)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="IdleDir"/>
-    </comp>
-    <comp lib="0" loc="(250,260)" name="Constant">
-      <a name="width" val="4"/>
-      <a name="value" val="0xc"/>
-    </comp>
-    <comp lib="7" loc="(390,250)" name="ThreeCaseSwitch4Bits"/>
     <comp lib="0" loc="(500,250)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -110,10 +92,28 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="MatrixRow"/>
       <a name="labelloc" val="east"/>
     </comp>
+    <comp lib="0" loc="(250,280)" name="Constant">
+      <a name="width" val="4"/>
+      <a name="value" val="0x7"/>
+    </comp>
+    <comp lib="0" loc="(250,260)" name="Constant">
+      <a name="width" val="4"/>
+      <a name="value" val="0xc"/>
+    </comp>
+    <comp lib="0" loc="(220,250)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="DownDir"/>
+    </comp>
     <comp lib="0" loc="(220,230)" name="Pin">
       <a name="width" val="3"/>
       <a name="tristate" val="false"/>
       <a name="label" val="UpDir"/>
+    </comp>
+    <comp lib="0" loc="(220,270)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="IdleDir"/>
     </comp>
   </circuit>
   <circuit name="SecondRowY">
@@ -132,16 +132,16 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(230,210)" to="(230,220)"/>
     <wire from="(210,290)" to="(360,290)"/>
     <wire from="(230,220)" to="(360,220)"/>
-    <comp lib="0" loc="(250,260)" name="Constant">
+    <comp lib="0" loc="(250,280)" name="Constant">
       <a name="width" val="4"/>
-      <a name="value" val="0xa"/>
+      <a name="value" val="0x8"/>
     </comp>
-    <comp lib="0" loc="(220,230)" name="Pin">
+    <comp lib="0" loc="(220,270)" name="Pin">
       <a name="width" val="3"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="UpDir"/>
+      <a name="label" val="IdleDir"/>
     </comp>
-    <comp lib="0" loc="(250,280)" name="Constant">
+    <comp lib="0" loc="(210,290)" name="Constant">
       <a name="width" val="4"/>
       <a name="value" val="0x8"/>
     </comp>
@@ -149,25 +149,25 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="4"/>
       <a name="value" val="0x9"/>
     </comp>
+    <comp lib="0" loc="(220,230)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="UpDir"/>
+    </comp>
     <comp lib="7" loc="(390,250)" name="ThreeCaseSwitch4Bits"/>
-    <comp lib="0" loc="(220,250)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="DownDir"/>
-    </comp>
-    <comp lib="0" loc="(220,270)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="IdleDir"/>
-    </comp>
     <comp lib="0" loc="(220,210)" name="Pin">
       <a name="width" val="3"/>
       <a name="tristate" val="false"/>
       <a name="label" val="JoystickY"/>
     </comp>
-    <comp lib="0" loc="(210,290)" name="Constant">
+    <comp lib="0" loc="(220,250)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="DownDir"/>
+    </comp>
+    <comp lib="0" loc="(250,260)" name="Constant">
       <a name="width" val="4"/>
-      <a name="value" val="0x8"/>
+      <a name="value" val="0xa"/>
     </comp>
     <comp lib="0" loc="(500,250)" name="Pin">
       <a name="facing" val="west"/>
@@ -193,10 +193,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(230,210)" to="(230,220)"/>
     <wire from="(210,290)" to="(360,290)"/>
     <wire from="(230,220)" to="(360,220)"/>
-    <comp lib="0" loc="(250,260)" name="Constant">
-      <a name="width" val="4"/>
-      <a name="value" val="0x9"/>
-    </comp>
     <comp lib="0" loc="(220,230)" name="Pin">
       <a name="width" val="3"/>
       <a name="tristate" val="false"/>
@@ -207,23 +203,32 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="tristate" val="false"/>
       <a name="label" val="DownDir"/>
     </comp>
+    <comp lib="0" loc="(250,280)" name="Constant">
+      <a name="width" val="4"/>
+      <a name="value" val="0xf"/>
+    </comp>
+    <comp lib="0" loc="(250,260)" name="Constant">
+      <a name="width" val="4"/>
+      <a name="value" val="0x9"/>
+    </comp>
+    <comp lib="7" loc="(390,250)" name="ThreeCaseSwitch4Bits"/>
     <comp lib="0" loc="(220,270)" name="Pin">
       <a name="width" val="3"/>
       <a name="tristate" val="false"/>
       <a name="label" val="IdleDir"/>
     </comp>
-    <comp lib="0" loc="(220,210)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="JoystickY"/>
-    </comp>
-    <comp lib="0" loc="(250,280)" name="Constant">
+    <comp lib="0" loc="(250,240)" name="Constant">
       <a name="width" val="4"/>
-      <a name="value" val="0xf"/>
+      <a name="value" val="0x9"/>
     </comp>
     <comp lib="0" loc="(210,290)" name="Constant">
       <a name="width" val="4"/>
       <a name="value" val="0xf"/>
+    </comp>
+    <comp lib="0" loc="(220,210)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="JoystickY"/>
     </comp>
     <comp lib="0" loc="(500,250)" name="Pin">
       <a name="facing" val="west"/>
@@ -231,11 +236,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="4"/>
       <a name="label" val="MatrixRow"/>
       <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="7" loc="(390,250)" name="ThreeCaseSwitch4Bits"/>
-    <comp lib="0" loc="(250,240)" name="Constant">
-      <a name="width" val="4"/>
-      <a name="value" val="0x9"/>
     </comp>
   </circuit>
   <circuit name="FourthRowY">
@@ -254,11 +254,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(230,210)" to="(230,220)"/>
     <wire from="(210,290)" to="(360,290)"/>
     <wire from="(230,220)" to="(360,220)"/>
-    <comp lib="7" loc="(390,250)" name="ThreeCaseSwitch4Bits"/>
-    <comp lib="0" loc="(220,270)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="IdleDir"/>
+    <comp lib="0" loc="(250,260)" name="Constant">
+      <a name="width" val="4"/>
+      <a name="value" val="0xa"/>
     </comp>
     <comp lib="0" loc="(500,250)" name="Pin">
       <a name="facing" val="west"/>
@@ -271,6 +269,17 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="4"/>
       <a name="value" val="0x9"/>
     </comp>
+    <comp lib="7" loc="(390,250)" name="ThreeCaseSwitch4Bits"/>
+    <comp lib="0" loc="(220,210)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="JoystickY"/>
+    </comp>
+    <comp lib="0" loc="(220,270)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="IdleDir"/>
+    </comp>
     <comp lib="0" loc="(220,230)" name="Pin">
       <a name="width" val="3"/>
       <a name="tristate" val="false"/>
@@ -280,22 +289,13 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="4"/>
       <a name="value" val="0x8"/>
     </comp>
+    <comp lib="0" loc="(250,280)" name="Constant">
+      <a name="width" val="4"/>
+    </comp>
     <comp lib="0" loc="(220,250)" name="Pin">
       <a name="width" val="3"/>
       <a name="tristate" val="false"/>
       <a name="label" val="DownDir"/>
-    </comp>
-    <comp lib="0" loc="(220,210)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="JoystickY"/>
-    </comp>
-    <comp lib="0" loc="(250,260)" name="Constant">
-      <a name="width" val="4"/>
-      <a name="value" val="0xa"/>
-    </comp>
-    <comp lib="0" loc="(250,280)" name="Constant">
-      <a name="width" val="4"/>
     </comp>
   </circuit>
   <circuit name="FifthRowY">
@@ -314,19 +314,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(230,210)" to="(230,220)"/>
     <wire from="(210,290)" to="(360,290)"/>
     <wire from="(230,220)" to="(360,220)"/>
-    <comp lib="0" loc="(220,230)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="UpDir"/>
-    </comp>
-    <comp lib="0" loc="(250,260)" name="Constant">
-      <a name="width" val="4"/>
-      <a name="value" val="0xc"/>
-    </comp>
-    <comp lib="0" loc="(250,280)" name="Constant">
-      <a name="width" val="4"/>
-      <a name="value" val="0xe"/>
-    </comp>
     <comp lib="0" loc="(500,250)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -334,12 +321,16 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="MatrixRow"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(220,250)" name="Pin">
+    <comp lib="0" loc="(220,270)" name="Pin">
       <a name="width" val="3"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="DownDir"/>
+      <a name="label" val="IdleDir"/>
     </comp>
-    <comp lib="7" loc="(390,250)" name="ThreeCaseSwitch4Bits"/>
+    <comp lib="0" loc="(220,230)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="UpDir"/>
+    </comp>
     <comp lib="0" loc="(220,210)" name="Pin">
       <a name="width" val="3"/>
       <a name="tristate" val="false"/>
@@ -349,14 +340,23 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="4"/>
       <a name="value" val="0xf"/>
     </comp>
+    <comp lib="7" loc="(390,250)" name="ThreeCaseSwitch4Bits"/>
+    <comp lib="0" loc="(250,280)" name="Constant">
+      <a name="width" val="4"/>
+      <a name="value" val="0xe"/>
+    </comp>
+    <comp lib="0" loc="(220,250)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="DownDir"/>
+    </comp>
+    <comp lib="0" loc="(250,260)" name="Constant">
+      <a name="width" val="4"/>
+      <a name="value" val="0xc"/>
+    </comp>
     <comp lib="0" loc="(250,240)" name="Constant">
       <a name="width" val="4"/>
       <a name="value" val="0xf"/>
-    </comp>
-    <comp lib="0" loc="(220,270)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="IdleDir"/>
     </comp>
   </circuit>
 </project>
