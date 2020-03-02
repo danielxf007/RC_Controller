@@ -83,47 +83,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(460,200)" to="(470,200)"/>
     <wire from="(380,190)" to="(380,250)"/>
     <wire from="(350,260)" to="(420,260)"/>
-    <comp lib="4" loc="(240,130)" name="Equality3Bits"/>
-    <comp lib="0" loc="(120,90)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="Value"/>
-    </comp>
-    <comp lib="0" loc="(140,330)" name="Pin">
-      <a name="width" val="7"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ThirdValue"/>
-    </comp>
-    <comp lib="4" loc="(240,210)" name="Equality3Bits"/>
-    <comp lib="0" loc="(140,250)" name="Pin">
-      <a name="width" val="7"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="SecondValue"/>
-    </comp>
-    <comp lib="0" loc="(120,140)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="FirstCase"/>
-    </comp>
-    <comp lib="3" loc="(500,200)" name="Multi7Bits"/>
-    <comp lib="3" loc="(450,270)" name="Multi7Bits"/>
-    <comp lib="0" loc="(120,220)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="SecondCase"/>
-    </comp>
-    <comp lib="4" loc="(240,280)" name="Equality3Bits"/>
-    <comp lib="0" loc="(140,180)" name="Pin">
-      <a name="width" val="7"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="FirstValue"/>
-    </comp>
-    <comp lib="0" loc="(140,360)" name="Pin">
-      <a name="width" val="7"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="DEFAULT"/>
-    </comp>
-    <comp lib="3" loc="(560,120)" name="Multi7Bits"/>
     <comp lib="0" loc="(580,120)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -131,10 +90,51 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="ReturnedValue"/>
       <a name="labelloc" val="east"/>
     </comp>
+    <comp lib="4" loc="(240,130)" name="Equality3Bits"/>
+    <comp lib="3" loc="(450,270)" name="Multi7Bits"/>
     <comp lib="0" loc="(120,290)" name="Pin">
       <a name="width" val="3"/>
       <a name="tristate" val="false"/>
       <a name="label" val="ThirdCase"/>
+    </comp>
+    <comp lib="0" loc="(120,90)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Value"/>
+    </comp>
+    <comp lib="0" loc="(140,250)" name="Pin">
+      <a name="width" val="7"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="SecondValue"/>
+    </comp>
+    <comp lib="3" loc="(500,200)" name="Multi7Bits"/>
+    <comp lib="0" loc="(120,140)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="FirstCase"/>
+    </comp>
+    <comp lib="0" loc="(140,180)" name="Pin">
+      <a name="width" val="7"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="FirstValue"/>
+    </comp>
+    <comp lib="4" loc="(240,210)" name="Equality3Bits"/>
+    <comp lib="4" loc="(240,280)" name="Equality3Bits"/>
+    <comp lib="3" loc="(560,120)" name="Multi7Bits"/>
+    <comp lib="0" loc="(140,330)" name="Pin">
+      <a name="width" val="7"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ThirdValue"/>
+    </comp>
+    <comp lib="0" loc="(140,360)" name="Pin">
+      <a name="width" val="7"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="DEFAULT"/>
+    </comp>
+    <comp lib="0" loc="(120,220)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="SecondCase"/>
     </comp>
   </circuit>
   <circuit name="SwitchOneCase7Bits">
@@ -154,11 +154,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(160,130)" to="(210,130)"/>
     <wire from="(260,110)" to="(300,110)"/>
     <wire from="(280,120)" to="(280,210)"/>
-    <comp lib="0" loc="(140,180)" name="Pin">
-      <a name="width" val="7"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="FirstValue"/>
-    </comp>
     <comp lib="0" loc="(350,120)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -166,23 +161,28 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="ReturnedValue"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(120,90)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="Value"/>
-    </comp>
-    <comp lib="4" loc="(240,130)" name="Equality3Bits"/>
-    <comp lib="0" loc="(140,210)" name="Pin">
-      <a name="width" val="7"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="DEFAULT"/>
-    </comp>
+    <comp lib="3" loc="(330,120)" name="Multi7Bits"/>
     <comp lib="0" loc="(120,140)" name="Pin">
       <a name="width" val="3"/>
       <a name="tristate" val="false"/>
       <a name="label" val="FirstCase"/>
     </comp>
-    <comp lib="3" loc="(330,120)" name="Multi7Bits"/>
+    <comp lib="4" loc="(240,130)" name="Equality3Bits"/>
+    <comp lib="0" loc="(120,90)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Value"/>
+    </comp>
+    <comp lib="0" loc="(140,180)" name="Pin">
+      <a name="width" val="7"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="FirstValue"/>
+    </comp>
+    <comp lib="0" loc="(140,210)" name="Pin">
+      <a name="width" val="7"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="DEFAULT"/>
+    </comp>
   </circuit>
   <circuit name="ThreeCaseSwitch4Bits">
     <a name="circuit" val="ThreeCaseSwitch4Bits"/>
@@ -221,33 +221,31 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(380,270)" to="(390,270)"/>
     <wire from="(330,190)" to="(410,190)"/>
     <wire from="(330,190)" to="(330,250)"/>
-    <comp lib="3" loc="(380,270)" name="Multiplexer4Bits"/>
     <comp lib="0" loc="(140,290)" name="Pin">
       <a name="width" val="3"/>
       <a name="tristate" val="false"/>
       <a name="label" val="ThirdCase"/>
     </comp>
-    <comp lib="0" loc="(140,330)" name="Pin">
-      <a name="width" val="4"/>
+    <comp lib="0" loc="(140,90)" name="Pin">
+      <a name="width" val="3"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="ThirdValue"/>
+      <a name="label" val="Value"/>
     </comp>
+    <comp lib="0" loc="(140,140)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="FirstCase"/>
+    </comp>
+    <comp lib="4" loc="(260,280)" name="Equality3Bits"/>
     <comp lib="0" loc="(140,250)" name="Pin">
       <a name="width" val="4"/>
       <a name="tristate" val="false"/>
       <a name="label" val="SecondValue"/>
     </comp>
-    <comp lib="4" loc="(260,210)" name="Equality3Bits"/>
-    <comp lib="4" loc="(260,130)" name="Equality3Bits"/>
     <comp lib="0" loc="(140,180)" name="Pin">
       <a name="width" val="4"/>
       <a name="tristate" val="false"/>
       <a name="label" val="FirstValue"/>
-    </comp>
-    <comp lib="0" loc="(140,220)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="SecondCase"/>
     </comp>
     <comp lib="0" loc="(530,120)" name="Pin">
       <a name="facing" val="west"/>
@@ -256,23 +254,72 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="ReturnedValue"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(140,90)" name="Pin">
+    <comp lib="0" loc="(140,220)" name="Pin">
       <a name="width" val="3"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="Value"/>
-    </comp>
-    <comp lib="4" loc="(260,280)" name="Equality3Bits"/>
-    <comp lib="0" loc="(140,140)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="FirstCase"/>
+      <a name="label" val="SecondCase"/>
     </comp>
     <comp lib="0" loc="(140,360)" name="Pin">
       <a name="width" val="4"/>
       <a name="tristate" val="false"/>
       <a name="label" val="DEFAULT"/>
     </comp>
-    <comp lib="3" loc="(500,120)" name="Multiplexer4Bits"/>
+    <comp lib="4" loc="(260,210)" name="Equality3Bits"/>
+    <comp lib="0" loc="(140,330)" name="Pin">
+      <a name="width" val="4"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ThirdValue"/>
+    </comp>
+    <comp lib="4" loc="(260,130)" name="Equality3Bits"/>
     <comp lib="3" loc="(440,200)" name="Multiplexer4Bits"/>
+    <comp lib="3" loc="(380,270)" name="Multiplexer4Bits"/>
+    <comp lib="3" loc="(500,120)" name="Multiplexer4Bits"/>
+  </circuit>
+  <circuit name="SwitchOneCase4Bits">
+    <a name="circuit" val="SwitchOneCase4Bits"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(260,110)" to="(260,180)"/>
+    <wire from="(140,210)" to="(280,210)"/>
+    <wire from="(120,140)" to="(210,140)"/>
+    <wire from="(240,130)" to="(300,130)"/>
+    <wire from="(280,120)" to="(300,120)"/>
+    <wire from="(330,120)" to="(350,120)"/>
+    <wire from="(120,90)" to="(160,90)"/>
+    <wire from="(160,90)" to="(160,130)"/>
+    <wire from="(140,180)" to="(260,180)"/>
+    <wire from="(160,130)" to="(210,130)"/>
+    <wire from="(260,110)" to="(300,110)"/>
+    <wire from="(280,120)" to="(280,210)"/>
+    <comp lib="0" loc="(140,180)" name="Pin">
+      <a name="width" val="4"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="FirstValue"/>
+    </comp>
+    <comp lib="4" loc="(240,130)" name="Equality3Bits"/>
+    <comp lib="0" loc="(140,210)" name="Pin">
+      <a name="width" val="4"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="DEFAULT"/>
+    </comp>
+    <comp lib="0" loc="(120,140)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="FirstCase"/>
+    </comp>
+    <comp lib="0" loc="(350,120)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="4"/>
+      <a name="label" val="ReturnedValue"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="3" loc="(330,120)" name="Multiplexer4Bits"/>
+    <comp lib="0" loc="(120,90)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Value"/>
+    </comp>
   </circuit>
 </project>

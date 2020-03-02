@@ -50,121 +50,145 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <wire from="(200,290)" to="(360,290)"/>
-    <wire from="(390,250)" to="(500,250)"/>
-    <wire from="(210,210)" to="(220,210)"/>
-    <wire from="(220,220)" to="(360,220)"/>
-    <wire from="(210,230)" to="(360,230)"/>
-    <wire from="(210,250)" to="(360,250)"/>
-    <wire from="(210,270)" to="(360,270)"/>
-    <wire from="(220,210)" to="(220,220)"/>
-    <wire from="(240,240)" to="(360,240)"/>
-    <wire from="(240,260)" to="(360,260)"/>
-    <wire from="(240,280)" to="(360,280)"/>
-    <comp lib="0" loc="(240,260)" name="Constant">
+    <wire from="(300,60)" to="(300,130)"/>
+    <wire from="(280,90)" to="(280,160)"/>
+    <wire from="(350,140)" to="(350,210)"/>
+    <wire from="(190,140)" to="(310,140)"/>
+    <wire from="(190,190)" to="(370,190)"/>
+    <wire from="(230,60)" to="(230,80)"/>
+    <wire from="(200,90)" to="(240,90)"/>
+    <wire from="(400,190)" to="(440,190)"/>
+    <wire from="(200,60)" to="(230,60)"/>
+    <wire from="(220,150)" to="(310,150)"/>
+    <wire from="(280,160)" to="(310,160)"/>
+    <wire from="(340,200)" to="(370,200)"/>
+    <wire from="(350,210)" to="(370,210)"/>
+    <wire from="(220,100)" to="(240,100)"/>
+    <wire from="(300,130)" to="(310,130)"/>
+    <wire from="(270,90)" to="(280,90)"/>
+    <wire from="(340,140)" to="(350,140)"/>
+    <wire from="(230,80)" to="(240,80)"/>
+    <wire from="(300,130)" to="(300,180)"/>
+    <wire from="(230,60)" to="(300,60)"/>
+    <wire from="(300,180)" to="(370,180)"/>
+    <comp lib="3" loc="(340,140)" name="SwitchOneCase4Bits"/>
+    <comp lib="0" loc="(220,150)" name="Constant">
       <a name="width" val="4"/>
       <a name="value" val="0x8"/>
     </comp>
-    <comp lib="0" loc="(210,270)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="IdleDir"/>
-    </comp>
-    <comp lib="0" loc="(210,210)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="JoystickX"/>
-    </comp>
-    <comp lib="0" loc="(210,250)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="LeftDir"/>
-    </comp>
-    <comp lib="0" loc="(240,240)" name="Constant">
-      <a name="width" val="4"/>
-      <a name="value" val="0xe"/>
-    </comp>
-    <comp lib="0" loc="(210,230)" name="Pin">
+    <comp lib="3" loc="(270,90)" name="SwitchOneCase4Bits"/>
+    <comp lib="0" loc="(200,90)" name="Pin">
       <a name="width" val="3"/>
       <a name="tristate" val="false"/>
       <a name="label" val="RightDir"/>
     </comp>
-    <comp lib="0" loc="(200,290)" name="Constant">
+    <comp lib="0" loc="(220,100)" name="Constant">
       <a name="width" val="4"/>
-      <a name="value" val="0xf"/>
+      <a name="value" val="0xe"/>
     </comp>
-    <comp lib="3" loc="(390,250)" name="ThreeCaseSwitch4Bits"/>
-    <comp lib="0" loc="(240,280)" name="Constant">
-      <a name="width" val="4"/>
-      <a name="value" val="0x7"/>
+    <comp lib="0" loc="(190,190)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="IdleDir"/>
     </comp>
-    <comp lib="0" loc="(500,250)" name="Pin">
+    <comp lib="0" loc="(440,190)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="width" val="4"/>
       <a name="label" val="MatrixRow"/>
       <a name="labelloc" val="east"/>
     </comp>
+    <comp lib="0" loc="(190,140)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="LeftDir"/>
+    </comp>
+    <comp lib="0" loc="(200,60)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="JoystickX"/>
+    </comp>
+    <comp lib="0" loc="(240,110)" name="Constant">
+      <a name="width" val="4"/>
+      <a name="value" val="0xf"/>
+    </comp>
+    <comp lib="0" loc="(340,200)" name="Constant">
+      <a name="width" val="4"/>
+      <a name="value" val="0x7"/>
+    </comp>
+    <comp lib="3" loc="(400,190)" name="SwitchOneCase4Bits"/>
   </circuit>
   <circuit name="SecondRowX">
     <a name="circuit" val="SecondRowX"/>
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <wire from="(250,240)" to="(360,240)"/>
-    <wire from="(250,260)" to="(360,260)"/>
-    <wire from="(250,280)" to="(360,280)"/>
-    <wire from="(220,210)" to="(230,210)"/>
-    <wire from="(220,230)" to="(360,230)"/>
-    <wire from="(220,250)" to="(360,250)"/>
-    <wire from="(220,270)" to="(360,270)"/>
-    <wire from="(210,290)" to="(360,290)"/>
-    <wire from="(230,210)" to="(230,220)"/>
-    <wire from="(390,250)" to="(490,250)"/>
-    <wire from="(230,220)" to="(360,220)"/>
-    <comp lib="0" loc="(220,210)" name="Pin">
+    <wire from="(320,30)" to="(320,100)"/>
+    <wire from="(300,60)" to="(300,130)"/>
+    <wire from="(370,110)" to="(370,180)"/>
+    <wire from="(210,110)" to="(330,110)"/>
+    <wire from="(210,160)" to="(390,160)"/>
+    <wire from="(250,30)" to="(250,50)"/>
+    <wire from="(220,60)" to="(260,60)"/>
+    <wire from="(420,160)" to="(460,160)"/>
+    <wire from="(220,30)" to="(250,30)"/>
+    <wire from="(240,120)" to="(330,120)"/>
+    <wire from="(300,130)" to="(330,130)"/>
+    <wire from="(360,170)" to="(390,170)"/>
+    <wire from="(370,180)" to="(390,180)"/>
+    <wire from="(240,70)" to="(260,70)"/>
+    <wire from="(320,100)" to="(330,100)"/>
+    <wire from="(290,60)" to="(300,60)"/>
+    <wire from="(360,110)" to="(370,110)"/>
+    <wire from="(250,50)" to="(260,50)"/>
+    <wire from="(320,100)" to="(320,150)"/>
+    <wire from="(250,30)" to="(320,30)"/>
+    <wire from="(320,150)" to="(390,150)"/>
+    <comp lib="0" loc="(360,170)" name="Constant">
+      <a name="width" val="4"/>
+      <a name="value" val="0x8"/>
+    </comp>
+    <comp lib="0" loc="(220,30)" name="Pin">
       <a name="width" val="3"/>
       <a name="tristate" val="false"/>
       <a name="label" val="JoystickX"/>
     </comp>
-    <comp lib="0" loc="(250,280)" name="Constant">
-      <a name="width" val="4"/>
-      <a name="value" val="0x8"/>
-    </comp>
-    <comp lib="0" loc="(220,230)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="RightDir"/>
-    </comp>
-    <comp lib="0" loc="(210,290)" name="Constant">
-      <a name="width" val="4"/>
-      <a name="value" val="0x8"/>
-    </comp>
-    <comp lib="0" loc="(490,250)" name="Pin">
+    <comp lib="0" loc="(460,160)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="width" val="4"/>
       <a name="label" val="MatrixRow"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="3" loc="(390,250)" name="ThreeCaseSwitch4Bits"/>
-    <comp lib="0" loc="(250,260)" name="Constant">
-      <a name="width" val="4"/>
-      <a name="value" val="0x8"/>
-    </comp>
-    <comp lib="0" loc="(220,250)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="LeftDir"/>
-    </comp>
-    <comp lib="0" loc="(220,270)" name="Pin">
+    <comp lib="0" loc="(210,160)" name="Pin">
       <a name="width" val="3"/>
       <a name="tristate" val="false"/>
       <a name="label" val="IdleDir"/>
     </comp>
-    <comp lib="0" loc="(250,240)" name="Constant">
+    <comp lib="0" loc="(220,60)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="RightDir"/>
+    </comp>
+    <comp lib="0" loc="(240,70)" name="Constant">
       <a name="width" val="4"/>
       <a name="value" val="0x9"/>
+    </comp>
+    <comp lib="0" loc="(210,110)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="LeftDir"/>
+    </comp>
+    <comp lib="3" loc="(290,60)" name="SwitchOneCase4Bits"/>
+    <comp lib="3" loc="(360,110)" name="SwitchOneCase4Bits"/>
+    <comp lib="0" loc="(260,80)" name="Constant">
+      <a name="width" val="4"/>
+      <a name="value" val="0x8"/>
+    </comp>
+    <comp lib="3" loc="(420,160)" name="SwitchOneCase4Bits"/>
+    <comp lib="0" loc="(240,120)" name="Constant">
+      <a name="width" val="4"/>
+      <a name="value" val="0x8"/>
     </comp>
   </circuit>
   <circuit name="ThirdRowX">
@@ -172,60 +196,72 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <wire from="(390,250)" to="(480,250)"/>
-    <wire from="(250,240)" to="(360,240)"/>
-    <wire from="(250,260)" to="(360,260)"/>
-    <wire from="(250,280)" to="(360,280)"/>
-    <wire from="(220,210)" to="(230,210)"/>
-    <wire from="(220,230)" to="(360,230)"/>
-    <wire from="(220,250)" to="(360,250)"/>
-    <wire from="(220,270)" to="(360,270)"/>
-    <wire from="(230,210)" to="(230,220)"/>
-    <wire from="(210,290)" to="(360,290)"/>
-    <wire from="(230,220)" to="(360,220)"/>
-    <comp lib="0" loc="(250,280)" name="Constant">
+    <wire from="(320,30)" to="(320,100)"/>
+    <wire from="(300,60)" to="(300,130)"/>
+    <wire from="(370,110)" to="(370,180)"/>
+    <wire from="(210,110)" to="(330,110)"/>
+    <wire from="(210,160)" to="(390,160)"/>
+    <wire from="(250,30)" to="(250,50)"/>
+    <wire from="(220,60)" to="(260,60)"/>
+    <wire from="(420,160)" to="(460,160)"/>
+    <wire from="(220,30)" to="(250,30)"/>
+    <wire from="(240,120)" to="(330,120)"/>
+    <wire from="(300,130)" to="(330,130)"/>
+    <wire from="(360,170)" to="(390,170)"/>
+    <wire from="(370,180)" to="(390,180)"/>
+    <wire from="(240,70)" to="(260,70)"/>
+    <wire from="(320,100)" to="(330,100)"/>
+    <wire from="(290,60)" to="(300,60)"/>
+    <wire from="(360,110)" to="(370,110)"/>
+    <wire from="(250,50)" to="(260,50)"/>
+    <wire from="(320,100)" to="(320,150)"/>
+    <wire from="(250,30)" to="(320,30)"/>
+    <wire from="(320,150)" to="(390,150)"/>
+    <comp lib="3" loc="(360,110)" name="SwitchOneCase4Bits"/>
+    <comp lib="3" loc="(420,160)" name="SwitchOneCase4Bits"/>
+    <comp lib="0" loc="(360,170)" name="Constant">
       <a name="width" val="4"/>
       <a name="value" val="0xf"/>
     </comp>
-    <comp lib="0" loc="(210,290)" name="Constant">
+    <comp lib="0" loc="(240,120)" name="Constant">
       <a name="width" val="4"/>
-      <a name="value" val="0xf"/>
+      <a name="value" val="0x8"/>
     </comp>
-    <comp lib="0" loc="(220,210)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="JoystickX"/>
+    <comp lib="0" loc="(240,70)" name="Constant">
+      <a name="width" val="4"/>
+      <a name="value" val="0xe"/>
     </comp>
-    <comp lib="0" loc="(220,270)" name="Pin">
+    <comp lib="3" loc="(290,60)" name="SwitchOneCase4Bits"/>
+    <comp lib="0" loc="(210,160)" name="Pin">
       <a name="width" val="3"/>
       <a name="tristate" val="false"/>
       <a name="label" val="IdleDir"/>
     </comp>
-    <comp lib="3" loc="(390,250)" name="ThreeCaseSwitch4Bits"/>
-    <comp lib="0" loc="(220,250)" name="Pin">
+    <comp lib="0" loc="(220,60)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="RightDir"/>
+    </comp>
+    <comp lib="0" loc="(210,110)" name="Pin">
       <a name="width" val="3"/>
       <a name="tristate" val="false"/>
       <a name="label" val="LeftDir"/>
     </comp>
-    <comp lib="0" loc="(250,240)" name="Constant">
+    <comp lib="0" loc="(260,80)" name="Constant">
       <a name="width" val="4"/>
-      <a name="value" val="0xe"/>
+      <a name="value" val="0xf"/>
     </comp>
-    <comp lib="0" loc="(480,250)" name="Pin">
+    <comp lib="0" loc="(460,160)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="width" val="4"/>
       <a name="label" val="MatrixRow"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(250,260)" name="Constant">
-      <a name="width" val="4"/>
-      <a name="value" val="0x8"/>
-    </comp>
-    <comp lib="0" loc="(220,230)" name="Pin">
+    <comp lib="0" loc="(220,30)" name="Pin">
       <a name="width" val="3"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="RightDir"/>
+      <a name="label" val="JoystickX"/>
     </comp>
   </circuit>
   <circuit name="FourthRowX">
@@ -233,59 +269,71 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <wire from="(390,250)" to="(480,250)"/>
-    <wire from="(250,240)" to="(360,240)"/>
-    <wire from="(250,260)" to="(360,260)"/>
-    <wire from="(250,280)" to="(360,280)"/>
-    <wire from="(220,210)" to="(230,210)"/>
-    <wire from="(220,230)" to="(360,230)"/>
-    <wire from="(220,250)" to="(360,250)"/>
-    <wire from="(220,270)" to="(360,270)"/>
-    <wire from="(230,210)" to="(230,220)"/>
-    <wire from="(210,290)" to="(360,290)"/>
-    <wire from="(230,220)" to="(360,220)"/>
-    <comp lib="0" loc="(250,260)" name="Constant">
+    <wire from="(320,30)" to="(320,100)"/>
+    <wire from="(300,60)" to="(300,130)"/>
+    <wire from="(370,110)" to="(370,180)"/>
+    <wire from="(210,110)" to="(330,110)"/>
+    <wire from="(210,160)" to="(390,160)"/>
+    <wire from="(250,30)" to="(250,50)"/>
+    <wire from="(220,60)" to="(260,60)"/>
+    <wire from="(420,160)" to="(460,160)"/>
+    <wire from="(220,30)" to="(250,30)"/>
+    <wire from="(240,120)" to="(330,120)"/>
+    <wire from="(300,130)" to="(330,130)"/>
+    <wire from="(360,170)" to="(390,170)"/>
+    <wire from="(370,180)" to="(390,180)"/>
+    <wire from="(240,70)" to="(260,70)"/>
+    <wire from="(320,100)" to="(330,100)"/>
+    <wire from="(290,60)" to="(300,60)"/>
+    <wire from="(360,110)" to="(370,110)"/>
+    <wire from="(250,50)" to="(260,50)"/>
+    <wire from="(320,100)" to="(320,150)"/>
+    <wire from="(250,30)" to="(320,30)"/>
+    <wire from="(320,150)" to="(390,150)"/>
+    <comp lib="3" loc="(290,60)" name="SwitchOneCase4Bits"/>
+    <comp lib="0" loc="(360,170)" name="Constant">
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(210,110)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="LeftDir"/>
+    </comp>
+    <comp lib="3" loc="(360,110)" name="SwitchOneCase4Bits"/>
+    <comp lib="0" loc="(240,120)" name="Constant">
       <a name="width" val="4"/>
       <a name="value" val="0x8"/>
     </comp>
-    <comp lib="0" loc="(220,270)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="IdleDir"/>
-    </comp>
-    <comp lib="0" loc="(250,280)" name="Constant">
-      <a name="width" val="4"/>
-    </comp>
-    <comp lib="0" loc="(480,250)" name="Pin">
+    <comp lib="0" loc="(460,160)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="width" val="4"/>
       <a name="label" val="MatrixRow"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(220,250)" name="Pin">
+    <comp lib="0" loc="(220,30)" name="Pin">
       <a name="width" val="3"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="LeftDir"/>
+      <a name="label" val="JoystickX"/>
     </comp>
-    <comp lib="0" loc="(220,230)" name="Pin">
+    <comp lib="0" loc="(240,70)" name="Constant">
+      <a name="width" val="4"/>
+      <a name="value" val="0xa"/>
+    </comp>
+    <comp lib="0" loc="(260,80)" name="Constant">
+      <a name="width" val="4"/>
+      <a name="value" val="0x8"/>
+    </comp>
+    <comp lib="0" loc="(220,60)" name="Pin">
       <a name="width" val="3"/>
       <a name="tristate" val="false"/>
       <a name="label" val="RightDir"/>
     </comp>
-    <comp lib="3" loc="(390,250)" name="ThreeCaseSwitch4Bits"/>
-    <comp lib="0" loc="(250,240)" name="Constant">
-      <a name="width" val="4"/>
-      <a name="value" val="0xa"/>
-    </comp>
-    <comp lib="0" loc="(210,290)" name="Constant">
-      <a name="width" val="4"/>
-      <a name="value" val="0x8"/>
-    </comp>
-    <comp lib="0" loc="(220,210)" name="Pin">
+    <comp lib="3" loc="(420,160)" name="SwitchOneCase4Bits"/>
+    <comp lib="0" loc="(210,160)" name="Pin">
       <a name="width" val="3"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="JoystickX"/>
+      <a name="label" val="IdleDir"/>
     </comp>
   </circuit>
   <circuit name="FifthRowX">
@@ -293,58 +341,70 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <wire from="(390,250)" to="(480,250)"/>
-    <wire from="(250,240)" to="(360,240)"/>
-    <wire from="(250,260)" to="(360,260)"/>
-    <wire from="(250,280)" to="(360,280)"/>
-    <wire from="(220,210)" to="(230,210)"/>
-    <wire from="(220,230)" to="(360,230)"/>
-    <wire from="(220,250)" to="(360,250)"/>
-    <wire from="(220,270)" to="(360,270)"/>
-    <wire from="(230,210)" to="(230,220)"/>
-    <wire from="(210,290)" to="(360,290)"/>
-    <wire from="(230,220)" to="(360,220)"/>
-    <comp lib="0" loc="(480,250)" name="Pin">
+    <wire from="(320,30)" to="(320,100)"/>
+    <wire from="(300,60)" to="(300,130)"/>
+    <wire from="(370,110)" to="(370,180)"/>
+    <wire from="(210,110)" to="(330,110)"/>
+    <wire from="(210,160)" to="(390,160)"/>
+    <wire from="(250,30)" to="(250,50)"/>
+    <wire from="(220,60)" to="(260,60)"/>
+    <wire from="(420,160)" to="(460,160)"/>
+    <wire from="(220,30)" to="(250,30)"/>
+    <wire from="(240,120)" to="(330,120)"/>
+    <wire from="(300,130)" to="(330,130)"/>
+    <wire from="(360,170)" to="(390,170)"/>
+    <wire from="(370,180)" to="(390,180)"/>
+    <wire from="(240,70)" to="(260,70)"/>
+    <wire from="(320,100)" to="(330,100)"/>
+    <wire from="(290,60)" to="(300,60)"/>
+    <wire from="(360,110)" to="(370,110)"/>
+    <wire from="(250,50)" to="(260,50)"/>
+    <wire from="(320,100)" to="(320,150)"/>
+    <wire from="(250,30)" to="(320,30)"/>
+    <wire from="(320,150)" to="(390,150)"/>
+    <comp lib="0" loc="(260,80)" name="Constant">
+      <a name="width" val="4"/>
+      <a name="value" val="0xf"/>
+    </comp>
+    <comp lib="0" loc="(220,60)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="RightDir"/>
+    </comp>
+    <comp lib="0" loc="(460,160)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="width" val="4"/>
       <a name="label" val="MatrixRow"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="3" loc="(390,250)" name="ThreeCaseSwitch4Bits"/>
-    <comp lib="0" loc="(210,290)" name="Constant">
-      <a name="width" val="4"/>
-      <a name="value" val="0xf"/>
-    </comp>
-    <comp lib="0" loc="(220,270)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="IdleDir"/>
-    </comp>
-    <comp lib="0" loc="(220,210)" name="Pin">
+    <comp lib="0" loc="(220,30)" name="Pin">
       <a name="width" val="3"/>
       <a name="tristate" val="false"/>
       <a name="label" val="JoystickX"/>
     </comp>
-    <comp lib="0" loc="(250,240)" name="Constant">
-      <a name="width" val="4"/>
-      <a name="value" val="0x9"/>
-    </comp>
-    <comp lib="0" loc="(220,230)" name="Pin">
+    <comp lib="3" loc="(360,110)" name="SwitchOneCase4Bits"/>
+    <comp lib="0" loc="(210,160)" name="Pin">
       <a name="width" val="3"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="RightDir"/>
+      <a name="label" val="IdleDir"/>
     </comp>
-    <comp lib="0" loc="(250,260)" name="Constant">
-      <a name="width" val="4"/>
-      <a name="value" val="0xf"/>
-    </comp>
-    <comp lib="0" loc="(220,250)" name="Pin">
+    <comp lib="0" loc="(210,110)" name="Pin">
       <a name="width" val="3"/>
       <a name="tristate" val="false"/>
       <a name="label" val="LeftDir"/>
     </comp>
-    <comp lib="0" loc="(250,280)" name="Constant">
+    <comp lib="3" loc="(420,160)" name="SwitchOneCase4Bits"/>
+    <comp lib="3" loc="(290,60)" name="SwitchOneCase4Bits"/>
+    <comp lib="0" loc="(240,70)" name="Constant">
+      <a name="width" val="4"/>
+      <a name="value" val="0x9"/>
+    </comp>
+    <comp lib="0" loc="(240,120)" name="Constant">
+      <a name="width" val="4"/>
+      <a name="value" val="0xf"/>
+    </comp>
+    <comp lib="0" loc="(360,170)" name="Constant">
       <a name="width" val="4"/>
       <a name="value" val="0xe"/>
     </comp>
@@ -354,33 +414,28 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <wire from="(150,90)" to="(210,90)"/>
-    <wire from="(280,60)" to="(280,80)"/>
-    <wire from="(210,90)" to="(210,170)"/>
-    <wire from="(200,100)" to="(200,180)"/>
-    <wire from="(220,80)" to="(220,160)"/>
-    <wire from="(230,70)" to="(230,150)"/>
-    <wire from="(290,130)" to="(290,160)"/>
-    <wire from="(200,180)" to="(240,180)"/>
-    <wire from="(200,100)" to="(240,100)"/>
     <wire from="(170,100)" to="(200,100)"/>
     <wire from="(210,170)" to="(240,170)"/>
     <wire from="(210,90)" to="(240,90)"/>
     <wire from="(130,80)" to="(220,80)"/>
+    <wire from="(150,90)" to="(210,90)"/>
     <wire from="(280,60)" to="(310,60)"/>
     <wire from="(290,130)" to="(310,130)"/>
     <wire from="(270,160)" to="(290,160)"/>
     <wire from="(220,160)" to="(240,160)"/>
     <wire from="(220,80)" to="(240,80)"/>
+    <wire from="(280,60)" to="(280,80)"/>
     <wire from="(270,80)" to="(280,80)"/>
+    <wire from="(210,90)" to="(210,170)"/>
+    <wire from="(200,100)" to="(200,180)"/>
+    <wire from="(220,80)" to="(220,160)"/>
+    <wire from="(230,70)" to="(230,150)"/>
     <wire from="(230,150)" to="(240,150)"/>
     <wire from="(230,70)" to="(240,70)"/>
+    <wire from="(290,130)" to="(290,160)"/>
+    <wire from="(200,180)" to="(240,180)"/>
+    <wire from="(200,100)" to="(240,100)"/>
     <wire from="(100,70)" to="(230,70)"/>
-    <comp lib="0" loc="(100,70)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="JoystickX"/>
-    </comp>
     <comp lib="0" loc="(310,130)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -388,6 +443,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="Row_1"/>
       <a name="labelloc" val="east"/>
     </comp>
+    <comp loc="(270,80)" name="FirstRowX"/>
     <comp lib="0" loc="(150,90)" name="Constant">
       <a name="width" val="3"/>
       <a name="value" val="0x0"/>
@@ -396,7 +452,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="3"/>
       <a name="value" val="0x5"/>
     </comp>
-    <comp loc="(270,80)" name="FirstRowX"/>
+    <comp lib="0" loc="(170,100)" name="Constant">
+      <a name="width" val="3"/>
+      <a name="value" val="0x2"/>
+    </comp>
+    <comp loc="(270,160)" name="SecondRowX"/>
     <comp lib="0" loc="(310,60)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -404,11 +464,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="Row_0"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(170,100)" name="Constant">
+    <comp lib="0" loc="(100,70)" name="Pin">
       <a name="width" val="3"/>
-      <a name="value" val="0x2"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="JoystickX"/>
     </comp>
-    <comp loc="(270,160)" name="SecondRowX"/>
   </circuit>
   <circuit name="RowsTwoThree">
     <a name="circuit" val="RowsTwoThree"/>
@@ -433,11 +493,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(210,180)" to="(250,180)"/>
     <wire from="(210,100)" to="(250,100)"/>
     <wire from="(110,70)" to="(240,70)"/>
-    <comp lib="0" loc="(140,80)" name="Constant">
+    <comp lib="0" loc="(110,70)" name="Pin">
       <a name="width" val="3"/>
-      <a name="value" val="0x5"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="JoystickX"/>
     </comp>
-    <comp loc="(280,160)" name="FourthRowX"/>
     <comp lib="0" loc="(330,160)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -445,26 +505,26 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="Row_3"/>
       <a name="labelloc" val="east"/>
     </comp>
+    <comp loc="(280,80)" name="ThirdRowX"/>
+    <comp lib="0" loc="(140,80)" name="Constant">
+      <a name="width" val="3"/>
+      <a name="value" val="0x5"/>
+    </comp>
+    <comp loc="(280,160)" name="FourthRowX"/>
+    <comp lib="0" loc="(160,90)" name="Constant">
+      <a name="width" val="3"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(180,100)" name="Constant">
+      <a name="width" val="3"/>
+      <a name="value" val="0x2"/>
+    </comp>
     <comp lib="0" loc="(330,80)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="width" val="4"/>
       <a name="label" val="Row_2"/>
       <a name="labelloc" val="east"/>
-    </comp>
-    <comp loc="(280,80)" name="ThirdRowX"/>
-    <comp lib="0" loc="(160,90)" name="Constant">
-      <a name="width" val="3"/>
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="0" loc="(110,70)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="JoystickX"/>
-    </comp>
-    <comp lib="0" loc="(180,100)" name="Constant">
-      <a name="width" val="3"/>
-      <a name="value" val="0x2"/>
     </comp>
   </circuit>
   <circuit name="FromJoystickXToMatrix">
@@ -491,29 +551,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(280,40)" to="(320,40)"/>
     <wire from="(280,90)" to="(320,90)"/>
     <wire from="(280,200)" to="(350,200)"/>
-    <comp lib="0" loc="(110,190)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="JoystickX"/>
-    </comp>
-    <comp loc="(280,90)" name="RowsTwoThree"/>
-    <comp loc="(280,200)" name="FifthRowX"/>
-    <comp lib="0" loc="(400,110)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="4"/>
-      <a name="label" val="Row_3"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp loc="(280,40)" name="RowsZeroOne"/>
-    <comp lib="0" loc="(140,200)" name="Constant">
-      <a name="width" val="3"/>
-      <a name="value" val="0x5"/>
-    </comp>
-    <comp lib="0" loc="(160,210)" name="Constant">
-      <a name="width" val="3"/>
-      <a name="value" val="0x0"/>
-    </comp>
     <comp lib="0" loc="(400,60)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -521,22 +558,24 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="Row_1"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(320,90)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="4"/>
-      <a name="label" val="Row_2"/>
-      <a name="labelloc" val="east"/>
-    </comp>
     <comp lib="0" loc="(180,220)" name="Constant">
       <a name="width" val="3"/>
       <a name="value" val="0x2"/>
     </comp>
-    <comp lib="0" loc="(320,40)" name="Pin">
+    <comp loc="(280,40)" name="RowsZeroOne"/>
+    <comp lib="0" loc="(160,210)" name="Constant">
+      <a name="width" val="3"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(140,200)" name="Constant">
+      <a name="width" val="3"/>
+      <a name="value" val="0x5"/>
+    </comp>
+    <comp lib="0" loc="(400,110)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="width" val="4"/>
-      <a name="label" val="Row_0"/>
+      <a name="label" val="Row_3"/>
       <a name="labelloc" val="east"/>
     </comp>
     <comp lib="0" loc="(350,200)" name="Pin">
@@ -546,5 +585,26 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="Row_4"/>
       <a name="labelloc" val="east"/>
     </comp>
+    <comp lib="0" loc="(110,190)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="JoystickX"/>
+    </comp>
+    <comp loc="(280,90)" name="RowsTwoThree"/>
+    <comp lib="0" loc="(320,90)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="4"/>
+      <a name="label" val="Row_2"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(320,40)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="4"/>
+      <a name="label" val="Row_0"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp loc="(280,200)" name="FifthRowX"/>
   </circuit>
 </project>
